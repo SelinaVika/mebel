@@ -539,7 +539,6 @@ img {
 .main-requests-form-desc{
     font-family: "Roboto", sans-serif;
     display: flex;
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
@@ -1442,6 +1441,53 @@ img {
 }
 
 /* END CONTACTS */
+
+/* ODER */
+
+.main-popular-item-alt{
+    width: calc(33.3333333% - 19px);
+}
+
+.main-oder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 20px;
+}
+
+.main-requests-oder{
+    background: url(../img/oder.jpg);
+    min-height: 640px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.main-oder-form-desc{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 164%;
+    text-align: center;
+    color: #120f24;
+}
+
+.main-oder-form-desc{
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    margin: auto;
+    color: #120f24;
+    margin-bottom: 18px;
+    justify-content: center;
+    width: 427px;
+    max-width: 100%;
+}
+
+/* END ODER */
 
 /* media query */
 
