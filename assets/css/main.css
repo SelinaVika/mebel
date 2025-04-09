@@ -1444,6 +1444,26 @@ img {
 
 /* ODER */
 
+.main-page-title{
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #120f24;
+    margin-bottom: 9px;
+}
+
+.main-page-desc{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #120f24;
+    max-width: 833px;
+    margin: auto;
+    margin-bottom: 38px;
+}
+
 .main-popular-item-alt{
     width: calc(33.3333333% - 19px);
 }
