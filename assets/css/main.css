@@ -1442,9 +1442,27 @@ img {
 
 /* END CONTACTS */
 
-/* ODER */
+/* CATALOG */
+
+.main-title-wrap.use-icon{
+    position: relative;
+}
+
+.main-title-wrap.use-icon::before{
+    content: "";
+    z-index: 2;
+    position: absolute;
+    left: 13%;
+    top: 13px;
+    background: url(../img/title-icon-bg.svg) no-repeat center;
+    background-size: contain;
+    width: 233px;
+    height: 196px;
+}
 
 .main-page-title{
+    position: relative;
+    z-index: 3;
     font-family: "Unbounded", sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -1454,6 +1472,8 @@ img {
 }
 
 .main-page-desc{
+    position: relative;
+    z-index: 3;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
@@ -1468,13 +1488,13 @@ img {
     width: calc(33.3333333% - 19px);
 }
 
-.main-oder{
+.main-catalog{
     display: flex;
     flex-wrap: wrap;
     gap: 24px 20px;
 }
 
-.main-requests-oder{
+.main-requests-catalog{
     background: url(../img/oder.jpg);
     min-height: 640px;
     background-repeat: no-repeat;
@@ -1483,17 +1503,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center; 
+    margin-bottom: 80px;
 }
 
-.main-oder-form-desc{
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 164%;
-    text-align: center;
-    color: #120f24;
-}
 
-.main-oder-form-desc{
+.main-catalog-form-desc{
     display: flex;
     font-weight: 400;
     font-size: 20px;
@@ -1507,11 +1521,109 @@ img {
     max-width: 100%;
 }
 
-/* END ODER */
+
+.main-pagination-wrap{
+    display: flex;
+   margin-bottom: 42px;
+}
+
+.main-pagination{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    cursor: pointer;
+}
+
+.page-item{
+    list-style: none;
+    font-size: 14px;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 364%;
+    text-transform: lowercase;
+    color: #120f24;
+    border: 1px solid #f9f9f9;
+
+}
+
+.main-catalog{
+    gap: 43px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 43px;
+}
+
+
+.steps-num-catalog{
+    font-family: "Unbounded", sans-serif;
+    padding: 6px;
+}
+
+.main-steps-item-catalog{
+    padding: 12px 0px;
+}
+
+.main-desc-catalog {
+    background: url("/assets/img/catalog-desc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 1100px;
+    margin-bottom: 80px;
+    margin-top: 31px;
+    padding: 8px 40px;
+}
+
+
+.main-catalog-desc-wrap{
+    margin: auto;
+    width: 1660px;
+    max-width: 100%;
+    background: #f5f4eb85;
+    padding: 40px 40px;
+
+}
+
+.main-catalog-desc-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #120f24;
+    margin-bottom: 31px;
+}
+
+.main-catalog-desc-title{
+    font-family: "Unbounded", sans-serif;;
+    font-weight: 400;
+    font-size: 28px;
+    color: #120f24;
+    margin-bottom: 10px;
+}
+
+.main-catalog-desc-mini-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* END CATALOG */
 
 /* media query */
 
 @media screen and (max-width: 1600px) {
+
+    .main-catalog-desc-wrap{
+        padding: 20px 20px;
+    }
+
     .cities-list-item{
     width: calc(20% - 16px + (16px/5));
     }
@@ -1529,6 +1641,11 @@ img {
 
 }
 @media screen and (max-width: 1400px) {
+
+    .main-catalog{
+        gap: 25px;
+    }
+
     .main-popular-item-price span {
         font-size: 18px;
     }
@@ -1548,6 +1665,25 @@ img {
  
 @media screen and (max-width: 1300px) {
 
+
+    .main-desc-catalog {
+        min-height: 922px;
+    }
+
+    .main-catalog-desc-text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .main-catalog-desc-title {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .catalog-item-alt{
+        width: calc(50% - 25px);
+    }
+
     .cities-list-item{
         width: calc(25% - 16px + (16px/4));
         }
@@ -1563,6 +1699,23 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .main-catalog-desc-text {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .main-page-title{    
+        font-size: 44px;}
+
+    .main-pagination-wrap {
+        margin-bottom: 28px;
+    }
+
+
+    .catalog-item-alt{
+        width: calc(50% - 25px);
+    }
 
     .main-delivery-row{
         flex-wrap: wrap;
@@ -1705,6 +1858,26 @@ img {
 }
 
 @media screen and (max-width: 991px) {
+
+    .main-catalog-desc-mini-title {
+        font-size: 14px;}
+
+    .main-catalog-desc-title {
+        font-size: 20px;
+    }
+
+    .main-catalog-desc-text {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .main-page-title{
+        font-size: 38px;
+    }
+
+    .main-page-desc{
+        font-size: 20px;
+    }
 
     .cities-list{
         margin-bottom: 30px;
@@ -1902,6 +2075,25 @@ img {
 
 
 @media screen and (max-width: 768px) {
+
+    .main-desc-catalog,
+    .main-steps,
+    .main-requests-catalog,
+    .main-popular-wrap {
+        margin-bottom: 50px;
+    }
+
+    .catalog-item-alt{
+        width: 100%
+    }
+
+    .main-page-desc {
+        margin-bottom: 24px;
+    }
+
+    .main-page-title {
+        font-size: 33px;
+    }
 
     .cities-list-item{
         width: calc(50% - 16px + (16px/2));
@@ -2102,6 +2294,15 @@ img {
 
 @media screen and (max-width: 640px) {
 
+    .main-desc-catalog{
+        padding: 8px 6px;
+    }
+
+    .main-catalog-desc-text {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
     .cities-list-item{
         width: calc(50% - 8px + (8px/2));
         }
@@ -2216,6 +2417,18 @@ img {
 
 @media screen and (max-width: 500px) {
 
+
+    .main-catalog-form-desc{
+        font-size: 18px;
+    }
+
+    .main-page-desc {
+        font-size: 16px;
+    }
+
+    .main-page-title {
+        font-size: 32px;
+    }
 
     .cities-list-item {
         padding: 4px;
@@ -2364,6 +2577,10 @@ img {
 }
 
 @media screen and (max-width: 420px) {
+
+    .main-catalog-desc-title {
+        font-size: 16px;
+    }
 
     .cities-list-item{
         width: 100%
