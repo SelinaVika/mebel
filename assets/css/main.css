@@ -1616,8 +1616,71 @@ img {
 
 /* END CATALOG */
 
+
+/* TOVAR */
+
+.main-tovar-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    gap: 20px;
+}
+
+.tovar-steps{
+    margin-bottom: 47px;
+}
+
+.advantages-tovar-title{
+    font-weight: 500;
+    font-size: 36px;
+    color: #120f24;
+    font-family: "Unbounded", sans-serif;
+}
+
+.main-gallery-item{
+    width: calc(50% - 20px);
+}
+
+.main-tovar-content{
+    background: #f5f4eb;
+    padding: 20px;
+    min-height: 194px;
+}
+
+.main-tovar-item-title{
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #120f24;
+    margin-bottom: 14px;
+}
+
+.main-tovar-item-desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #120f24;
+}
+
+.main-tovar-list{
+    margin-bottom: 94px;
+}
+
+/* END TOVAR */
+
 /* media query */
 
+@media screen and (max-width: 1700px) {
+
+    .main-tovar-item-title {
+        font-size: 24px;
+    }
+
+    .main-tovar-item-desc{
+        font-size: 16px;
+    }
+
+}
 @media screen and (max-width: 1600px) {
 
     .main-catalog-desc-wrap{
@@ -1630,6 +1693,10 @@ img {
 
 }
 @media screen and (max-width: 1500px) {
+
+    .main-tovar-item-title {
+        font-size: 20px;
+    }
 
     .main-steps.main-steps-alt .main-steps-item-text{
         font-size: 16px;
@@ -1665,6 +1732,23 @@ img {
  
 @media screen and (max-width: 1300px) {
 
+    .main-tovar-item-title {
+        font-size: 18px;
+    }
+    
+    .main-tovar-item-desc {
+        font-size: 14px;
+    }
+    
+    .main-tovar-item-title {
+        margin-bottom: 8px;
+    }
+    
+
+    .inform-about-company{
+        margin-bottom: 50px;
+    }
+
 
     .main-desc-catalog {
         min-height: 922px;
@@ -1699,6 +1783,10 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .main-tovar-row{
+        margin-bottom: 50px;
+    }
 
     .main-catalog-desc-text {
         font-size: 16px;
@@ -1801,6 +1889,10 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .main-gallery-item.main-tovar-item{
+        width: 100%;
+    }
 
     .cities-list-item{
         width: calc(33.3333333% - 16px + (16px/3));
@@ -2416,6 +2508,19 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+
+    .main-steps.main-steps-alt {
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    .inform-about-company {
+        margin-bottom: 25px;
+    }
+
+    .main-requests {
+        margin-bottom: 25px;
+    }
 
 
     .main-catalog-form-desc{
