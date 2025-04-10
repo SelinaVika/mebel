@@ -1668,6 +1668,89 @@ img {
 
 /* END TOVAR */
 
+/* DETAIL ARTICLE */
+
+.article-detail-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.article-detail-img,
+.article-detail-content {
+    position: relative;
+    flex: 1;
+}
+
+.article-detail-img img {
+    position: sticky;
+    top: 10px;
+}
+
+.article-detail-row.reverse .article-detail-img {
+    order: 2;
+}
+
+ 
+
+.article-detail-content h2 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #120f24;
+    margin-bottom: 20px;
+}
+
+.article-detail-content,
+.article-detail-content p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #120f24;
+}
+
+.article-detail-content p{
+    margin-bottom: 20px;
+}
+
+.article-detail-content h3{
+    font-weight: 400;
+    font-size: 20px;
+    color: #120f24;
+    font-family: "Unbounded", sans-serif;
+    margin-bottom: 20px;
+}
+
+.article-detail-content li{
+    position: relative;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #120f24;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.article-detail-content li::before{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background:  #acc65b;
+    height: 6px;
+    min-width: 16px;
+    content: "";
+}
+
+.article-detail-content li span{
+    font-weight: 700;
+    line-height: 117%;
+    color: #839a3a;
+}
+
+/* END DETAIL ARTICLE */
+
 /* media query */
 
 @media screen and (max-width: 1700px) {
@@ -1889,7 +1972,11 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-
+    .article-detail-img,
+    .article-detail-content {
+        flex: auto;
+        width: 100%;
+    }
     .main-gallery-item.main-tovar-item{
         width: 100%;
     }
@@ -2508,7 +2595,21 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-
+    .article-detail-row {
+        margin-bottom: 10px;
+    }
+    .article-detail-content, .article-detail-content p {
+        font-size: 16px;
+    }
+    .article-detail-content h2 {
+        font-size: 20px;
+    }
+    .article-detail-content h3 { 
+        font-size: 18px;
+    }
+    .article-detail-content li {
+        font-size: 16px;
+    }
     .main-steps.main-steps-alt {
         gap: 15px;
         padding-bottom: 10px;
